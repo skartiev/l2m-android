@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/bottom_menu_common"
+              android:background="@drawable/bottom_bar"
+              android:layout_width="fill_parent"
+              android:layout_height="72dp"
+              android:orientation="horizontal"
+              android:layout_gravity="bottom"
+                >
+                <RelativeLayout
+                    style="@style/look2meet.botom_bar_button_layout"
+                    android:id="@+id/menu_button_profiles"
+                    android:onClick="profilesClicked">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/relativeLayout"></RelativeLayout>
+                        <ImageView
+                            style="@style/look2meet.botom_bar_button_image"
+                            android:src="@drawable/bottom_bar_me"
+                            android:id="@+id/imageView"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+                        <TextView
+                            style="@style/look2meet.botom_bar_button_text"
+                            android:text="@string/bottom_bar_me"
+                            android:layout_below="@+id/imageView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/write_message"
+                            android:background="@android:color/transparent"
+                            android:layout_alignTop="@+id/imageView"
+                            android:layout_toRightOf="@+id/imageView"
+                            android:layout_toEndOf="@+id/imageView"
+                            android:id="@+id/menu_unread_messages"
+                            android:visibility="invisible"
+                            />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/look2meet.botom_bar_button_layout"
+                    android:id="@+id/menu_button_menu"
+                    android:onClick="openMenu">
+
+                    <ImageView
+                        style="@style/look2meet.botom_bar_button_image"
+                        android:src="@drawable/bottom_bar_menu"/>
+
+                    <TextView
+                        style="@style/look2meet.botom_bar_button_text"
+                        android:text="@string/bottom_bar_menu"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/look2meet.botom_bar_button_layout"
+                    android:id="@+id/menu_button_checkin"
+                    android:onClick="checkInCliked">
+
+                    <ImageView
+                        style="@style/look2meet.botom_bar_button_image"
+                        android:src="@drawable/bottom_bar_checkin"/>
+
+                    <TextView
+                        style="@style/look2meet.botom_bar_button_text"
+                        android:text="@string/bottom_bar_checkin"/>
+
+                </LinearLayout>
+
+    <RelativeLayout
+        style="@style/look2meet.botom_bar_button_layout"
+        android:id="@+id/menu_button_chat"
+        android:onClick="chatClicked">
+            <ImageView
+                style="@style/look2meet.botom_bar_button_image"
+                android:src="@drawable/bottom_bar_chat"
+                android:id="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                style="@style/look2meet.botom_bar_button_text"
+                android:text="@string/bottom_bar_chat"
+                android:layout_below="@+id/imageView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_toEndOf="@+id/imageView1"
+                android:id="@+id/menu_unread_messages_my_profile"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_green_light"
+                android:lines="1"
+                android:longClickable="false"
+                android:numeric="integer" />
+    </RelativeLayout>
+
+</LinearLayout>

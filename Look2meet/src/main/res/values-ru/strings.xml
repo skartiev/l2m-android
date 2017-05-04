@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_button">Вход</string>
+    <string name="register_button">Регистрация</string>
+    <string name="title_activity_login">Войти</string>
+    <string name="title_activity_map">Карта</string>
+    <string name="login_forget_password">Забыли пароль?</string>
+    <string name="login_forget_password_hyperlink"><a href="http://look2meet.com/#forgotpassword">Забыли пароль\?</a></string>
+    <string name="hyper_link_add_profile"><a href="http://look2meet.com/user/profile#add">Добавить профиль</a></string>
+    <string name="login_remember">Запомнить меня</string>
+    <string name="login_remember_summary">Запомнить меня</string>
+
+    <string name="title_activity_registration">Регистрация</string>
+    <string name="registration_name">Имя</string>
+    <string name="registration_password">Пароль</string>
+    <string name="registration_confirm_password">Подтвердите пароль</string>
+    <string name="registration_confirm_license"><a href="http://look2meet.com/agreement.html">Я принимаю пользовательское\nсоглашение</a></string>
+    <string name="registration_sex">Пол</string>
+    <string name="registration_sex_male">Мужской</string>
+    <string name="registration_sex_female">Женский</string>
+
+    <string name="edit_black_list">Редактировать черный список</string>
+    <string name="invisible">Невидимка для всех, кроме</string>
+    <string name="mask">Маска для всех, кроме</string>
+
+    <string name="chat">Чат</string>
+    <string name="checkIn">Чекин</string>
+    <string name="me">Я</string>
+
+    <string name="search">Поиск</string>
+    <string name="favorite">Избранное</string>
+    <string name="friends">Друзья</string>
+    <string name="announce">Анонс</string>
+
+    <string name="back">Назад</string>
+    <string name="menu">Меню</string>
+
+    <string name="copyright">2014 © Все права защищены</string>
+
+    <string name="thx">Спасибо</string>
+    <string name="skip">Пропустить</string>
+    <string name="who_are_you_looking_for">Кого Вы ищете?</string>
+    <string name="everyone">Всех</string>
+    <string name="men">Мужчины</string>
+    <string name="women">Женщины</string>
+    <string name="age">Возраст</string>
+
+    <string-array name="Sex">
+        <item>@string/everyone</item>
+        <item>@string/men</item>
+        <item>@string/women</item>
+    </string-array>
+
+    <string name="checkin_list">Список чекинов</string>
+
+    <string name="search_param_country">Страна</string>
+    <string name="search_param_city">Город</string>
+    <string name="search_param_address">Адрес</string>
+    <string name="search_param_name">Название</string>
+    <string name="search_param_type">Тип</string>
+    <string name="search_param_favorite">Избранное</string>
+    <string name="search_param_near_me">Рядом со мной</string>
+    <string name="search_param_no">Нет</string>
+    <string name="search_param_yes">Да</string>
+    <string name="search_param_type_all">Все</string>
+    <string name="search_param_type_cafe">Кафе</string>
+    <string name="search_param_type_park">Парк</string>
+    <string name="search_param_type_cinema">Кино</string>
+    <string name="search_param_country_russia">Россия</string>
+    <string name="error_try_again">Попробуйте еще раз</string>
+    <string name="error">Ошибка</string>
+
+    <string name="search_menu_top">ТОП</string>
+    <string name="search_menu_search">Поиск</string>
+    <string name="search_menu_create_temp_object">Создать временный объект</string>
+
+    <!--activity_map-->
+    <string name="map_find_you">Мы пытаемся вас найти</string>
+    <string name="map_gps_off_header">Определение местоположения отключено</string>
+    <string name="map_gps_off_warning">Для улучшения работы приложения рекомендуется использовать GPS, включить GPS?</string>
+
+    <!--global-->
+    <string name="global_negative">Нет</string>
+    <string name="global_positive">Да</string>
+    <string name="global_remind_later">Напомнить позже</string>
+
+    <string name="to">Кому: </string>
+    <string name="subject">Тема: </string>
+    <string name="message">Сообщение: </string>
+    <string name="send">Отправить</string>
+	<string name="message_template1">Добрый день.\nЯ, </string>
+	<string name="message_template2">Опишите здесь вашу проблему</string>
+	<string name="message_template3">Отправлено с Android версии </string>
+    <string name="email_theme">Обращение пользователя Look2meet</string>
+
+    <string name="on_the_map">На карте</string>
+
+    <!--api messages-->
+    <string name="api_network_disabled">Доступ к сети отсутствует, настройте подключение</string>
+    <string name="api_wifi_data">WiFi</string>
+    <string name="api_mobile_data">Мобильная сеть</string>
+
+    <!-- organizations list cell -->
+    <string name="orglist_cell_work_time">Время работы: </string>
+    <string name="orglist_cell_address">Адрес: </string>
+    <string name="orglist_cell_announce">Анонс: </string>
+    <string name="rating">Рейтинг</string>
+    <string name="announces">Анонсы</string>
+
+    <!-- checkin types -->
+    <string name="checkin_type_now">Я здесь</string>
+    <string name="checkin_type_soon">Скоро буду</string>
+    <string name="checkin_type_plan">Планирую</string>
+    <string name="checkin_type_all">Все</string>
+
+    <!-- bottom bar buttons -->
+    <string name="bottom_bar_me">ПРОФИЛИ</string>
+    <string name="bottom_bar_menu">МЕНЮ</string>
+    <string name="bottom_bar_checkin">ЧЕКИН</string>
+    <string name="bottom_bar_chat">ЧАТ</string>
+
+    <string name="write_message">НАПИСАТЬ</string>
+    <string name="present">ПОДАРОК</string>
+    <string name="delete_from_friends">УДАЛИТЬ ИЗ ДРУЗЕЙ</string>
+    <string name="add_to_friends">ДОБАВИТЬ В ДРУЗЬЯ</string>
+    <string name="add_to_blacklist">В ЧЕРНЫЙ СПИСОК</string>
+    <string name="remove_from_blacklist">ИЗ ЧЕРНОГО СПИСКА</string>
+    <string name="sex">Пол: </string>
+    <string name="edit">Редактирование</string>
+
+    <!-- Checkins filter -->
+    <string name="announes_filter_activity_title">Параметры фильтрации</string>
+    <string name="announes_filter_title">Название</string>
+    <string name="announes_filter_date_from">С даты</string>
+    <string name="announes_filter_date_to">По дату</string>
+    <string name="announes_filter_checkin_type">Чекин</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+
+
+    <string name="create_new_profile">Создать новый</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="choose_email_client">Выберите email клиент</string>
+    <string name="user_list_black">Черный список</string>
+    <string name="user_list_white">Белый список</string>
+    <string name="user_list_mask">Список маска</string>
+    <string name="user_list_friends">Друзья</string>
+    <string name="settings">Настройки</string>
+    <string name="change_text">Изменить текст</string>
+    <string name="save">Сохранить</string>
+
+    <string name="already_checked_in">Вы уже зачекинены со статусом </string>
+    <string name="go_away">Хотите уйти?</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="gender">Пол</string>
+    <string name="range_from">от</string>
+    <string name="range_to">до</string>
+
+    <!--сообщения-->
+    <string name="message_error">Ошибка</string>
+    <string name="message_network_error">Нет подключения к сети. Работа приложения будет продолжена после подключения к сети.</string>
+    <string name="message_data_recieving_error">Ошибка получения данных</string>
+    <string name="message_check_network">Проверьте сетевое соединение</string>
+    <string name="message_no_connect_to_server">Нет соединения с сервером</string>
+
+    <string name="message_wrong_data">Неверные данные</string>
+    <string name="message_passwords_not_equals">Пароли не совпадают</string>
+    <string name="message_wrong_email">неверный формат email</string>
+    <string name="message_empty_password">пароль не может быть пустым</string>
+    <string name="message_password_short">пароль менее 6 символов</string>
+    <string name="message_name_empty">имя не может быть пустым</string>
+
+    <!--photo gallery-->
+    <string name="close_fullscreen_image">Закрыть</string>
+    <string name="free">Бесплатные</string>
+    <string name="premium">Премиум</string>
+    <string name="gifts">Подарки</string>
+    <string name="message_text">Введите текст</string>
+
+
+    <string name="please_wait">Подождите...</string>
+
+    <string name="wait_for_load">Дождитесь загрузки файла</string>
+
+    <!-- Gender types -->
+    <string name="gender_type_male">Мужчины</string>
+    <string name="gender_type_female">Женщины</string>
+    <string name="gender_type_all">Все</string>
+
+    <string name="filter_results_warning">Результаты поиска были отфильтрованы</string>
+    <string name="video">Видео</string>
+    <string name="photo">Фото</string>
+    <string name="build">Сборка: </string>
+
+    <!-- add photo menu -->
+    <string name="add_from_camera">Добавить с камеры</string>
+    <string name="add_from_gallery">Добавить из галереи</string>
+
+    <string name="msg_size_max_reached">Вы превысили максимальный размер сообщения</string>
+
+    <string name="double_tap_to_exit" translatable="true">Нажмите "НАЗАД" снова для выхода</string>
+
+    <!--chat activity-->
+    <string name="chat_menu_smile" translatable="true">Смайлы</string>
+    <string name="chat_menu_image_from_camera" translatable="true">Изображение с камеры</string>
+    <string name="chat_menu_image_from_gallery" translatable="true">Изображение из галереи</string>
+    <string name="chat_menu_video_from_camera" translatable="true">Видео с камеры</string>
+    <string name="chat_menu_video_from_gallery" translatable="true">Видео из галереи</string>
+
+    <string name="address" translatable="true">Адрес</string>
+    <string name="org_name" translatable="true" >Название</string>
+    <string name="proceed">Готово</string>
+    <string name="update">Обновить</string>
+    <string name="favorites_empty">Список избранного пуст</string>
+    <string name="checkin_remain">До окончания действия статуса осталось</string>
+    <string name="dialogs">Диалоги</string>
+
+    <string name="warning">Внимание</string>
+    <string name="alert_avatar">Вы действительно хотите изменить аватарку? \nЭто действие невозможно отменить.</string>
+
+</resources>

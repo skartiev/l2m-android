@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="3"
+    android:columnCount="1"
+    android:clickable="true"
+    android:background="@android:color/white"
+    >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/search_favorite_friends_menu"
+        />
+
+    <ListView
+        android:id="@+id/profiles_list_"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+
+    <Button android:id="@+id/profiles_empty"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/update"
+        android:layout_gravity="center_horizontal"
+        android:onClick="updateProfiles"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/main_menu"
+        />
+
+</LinearLayout>

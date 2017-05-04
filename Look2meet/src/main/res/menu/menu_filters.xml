@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item android:id="@+id/filter_alphavet"
+        android:title="По алфавиту" />
+    <item android:id="@+id/filter_remote"
+        android:title="По удаленности" />
+    <item android:id="@+id/filter_menCount"
+        android:title="По кол-ву мужчин" />
+    <item android:id="@+id/filter_womenCount"
+        android:title="По кол-ву женщин" />
+    <item android:id="@+id/filter_menWomen"
+        android:title="По кол-ву муж+жен" />
+    <item android:id="@+id/filter_like"
+        android:title="По количеству лайков" />
+    <item android:id="@+id/filter_countHereMens"
+        android:title="По кол-ву я здесь муж" />
+    <item android:id="@+id/filter_countHereWomens"
+        android:title="По кол-ву я здесь жен" />
+    <item android:id="@+id/filter_countHereMensWomens"
+        android:title="По кол-ву я здесь муж+жен" />
+</menu>

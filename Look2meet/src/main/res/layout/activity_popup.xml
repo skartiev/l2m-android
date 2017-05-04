@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/PopupWindowAnimation"
+              android:weightSum="1"
+              android:minWidth="180dp"
+              android:background="@android:color/white"
+	>
+
+	<TextView
+		android:id="@+id/textLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center|top"
+		android:singleLine="false"
+		android:textSize="20dp"
+		android:textAlignment="center"
+		android:password="false"
+		android:gravity="center"
+		android:autoText="false"
+		android:paddingTop="10dp"
+		android:paddingBottom="5dp"
+		android:padding="5dp"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="OK"
+		android:id="@+id/okButton"
+		android:layout_gravity="center_horizontal"
+		android:width="120dp"
+		android:paddingBottom="10dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:weightSum="1"
+		android:id="@+id/btnsLayout"
+		android:paddingBottom="10dp"
+		android:minWidth="200dp">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="0.5"
+			android:layout_height="wrap_content"
+			android:text="New Button left"
+			android:id="@+id/leftButton"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="0.5"
+			android:layout_height="wrap_content"
+			android:text="New Button rht"
+			android:id="@+id/rightButton"
+			android:layout_gravity="right"/>
+
+	</LinearLayout>
+
+</LinearLayout>

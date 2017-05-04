@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:id="@+id/map_info_back"
+        android:clickable="true"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/bleft"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@+id/map_object_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:gravity="left"
+
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/map_object_top"
+                android:src="@drawable/mark_top_x2"
+                android:background="@android:color/white"
+                android:layout_gravity="center_vertical|right"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:baselineAligned="false"
+             android:background="@android:color/white"
+             android:gravity="left"
+            android:paddingBottom="5dp">
+
+            <ImageView
+            android:id="@+id/map_object_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="3dp"
+            android:background="@android:color/transparent">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            >
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/map_object_male_cnt_now"
+                    style="@style/look2meet.map.objectInfo.checkins"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/men"/>
+
+                <TextView
+                    android:id="@+id/map_object_female_cnt_now"
+                    style="@style/look2meet.map.objectInfo.checkins"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/women"
+                    />
+                </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/map_object_work_time"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff7f7f7f"
+                android:textSize="10dp" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="30px" />
+
+            <LinearLayout
+                android:id="@+id/map_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/head_2_meet3030"
+                    android:layout_marginRight="10dp">
+                    </ImageView>
+
+                <TextView
+                    android:id="@+id/map_object_users_count"
+                    style="@style/look2meet.map.objectInfo.checkins"
+                    android:textColor="#0072c0"
+                    android:layout_gravity="center_vertical|top"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:id="@+id/map_info_forward"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/bright"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/map_popup_cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:src="@drawable/triangle"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+</LinearLayout>

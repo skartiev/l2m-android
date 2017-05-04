@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zuzex.look2meet.media.PhotoActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal"
+        android:id="@+id/layoutGift">
+
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/back_buttonGift"
+            android:src="@drawable/bar_button_back2x"
+            android:onClick="BackClicked"
+            />
+        <TextView
+            android:id="@+id/activity_top_captionGift"
+            android:layout_weight="0.8"
+            android:text="@string/gifts"
+            style="@style/look2meet.top_bar_caption" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/free"
+        android:id="@+id/textViewFree"
+        android:layout_below="@+id/layoutGift"
+        android:layout_marginLeft="150dp"
+        android:textSize="16dp" />
+
+    <GridView
+        android:id="@+id/giftsGridViewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:layout_below="@+id/textViewFree"
+        >
+    </GridView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/premium"
+        android:id="@+id/textViewPremium"
+        android:layout_below="@+id/giftsGridViewFirst"
+        android:layout_marginLeft="150dp"
+        android:textSize="16dp" />
+
+    <GridView
+        android:id="@+id/giftsGridViewSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:layout_below="@+id/textViewPremium"
+        >
+    </GridView>
+
+
+</RelativeLayout>

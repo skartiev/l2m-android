@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    style="@style/look2meet.top_bar_caption">
+
+
+    <ImageSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageSwitcher"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageSwitcher"
+        android:layout_toEndOf="@+id/imageSwitcher" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:onClick="close"
+        android:textAlignment="center"
+        android:text="@string/close_fullscreen_image"
+        android:id="@+id/image_gallery_closeFullscreen_button"
+        android:background="@drawable/layout_border_white"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageSwitcher"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        >
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:onClick="back"
+            android:textAlignment="center"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:id="@+id/image_gallery_closeFullscreen_button_back"
+            android:background="@drawable/layout_border_white"
+            android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:onClick="forward"
+            android:textAlignment="center"
+            android:text="&gt;"
+            android:textStyle="bold"
+            android:id="@+id/image_gallery_closeFullscreen_button_forward"
+            android:background="@drawable/layout_border_white"
+            android:textColor="@android:color/white"
+            />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<item android:id="@+id/menu_blacklist"-->
+        <!--android:title="@string/edit_black_list" />-->
+
+    <!--<item android:id="@+id/menu_invisible"-->
+        <!--android:title="@string/invisible" />-->
+
+    <!--<item android:id="@+id/menu_mask"-->
+        <!--android:title="@string/mask" />-->
+    <item android:id="@+id/menu_main"
+        android:title="Главная" />
+    <item android:id="@+id/menu_myProfile"
+        android:title="Мой профайл" />
+    <item android:id="@+id/menu_settings"
+        android:title="Настройки" />
+    <item android:id="@+id/menu_search"
+        android:title="Кого вы ищете?" />
+    <item android:id="@+id/menu_history"
+        android:title="История переписки" />
+    <item android:id="@+id/menu_myTemp"
+        android:title="Мои временные обьекты" />
+    <item android:id="@+id/menu_balans"
+        android:title="Пополнить баланс" />
+    <item android:id="@+id/menu_admin"
+        android:title="Сообщить о проблеме" />
+    <item android:id="@+id/menu_exit"
+        android:title="Выход" />
+</menu>

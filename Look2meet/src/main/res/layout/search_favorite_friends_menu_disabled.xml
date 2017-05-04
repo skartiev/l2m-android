@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/top_menu"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="60dp"
+              android:background="@drawable/top_bar">
+
+    <ImageButton
+        android:id="@+id/search_id"
+        style="@style/look2meet.top_bar_button_disabled"
+        android:src="@drawable/bb_search_active"/>
+
+    <ImageButton
+        android:id="@+id/deleteMedia"
+        style="@style/look2meet.top_bar_button_disabled"
+        android:src="@drawable/bb_fav_active"/>
+
+    <ImageButton
+        android:id="@+id/friends_id"
+        style="@style/look2meet.top_bar_button_disabled"
+        android:src="@drawable/bb_friends_active"/>
+
+    <ImageButton
+        android:id="@+id/annonce_id"
+        style="@style/look2meet.top_bar_button_disabled"
+        android:src="@drawable/bb_announce_active"/>
+
+</LinearLayout>

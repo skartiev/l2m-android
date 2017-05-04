@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yandex_metrica_key" translatable="false">28147</string>
+
+
+    <!-- api -->
+    <string name="login_button" translatable="true">Login</string>
+    <string name="register_button" translatable="true">Register</string>
+    <string name="json_parse_error" translatable="false">Error, try again</string>
+    <string name="app_name" translatable="false">Look2meet</string>
+    <string name="login_password_forget_url" translatable="false">http://look2meet.com/</string>
+    <string name="registration_email" translatable="false">Email</string>
+    <string name="title_activity_profiles" translatable="false">ProfilesActivity</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="back" translatable="true">&lt;</string>
+    <string name="title_activity_looking_for" translatable="false">Looking_for</string>
+    <string name="title_activity_my_profile" translatable="false">MyProfileActivity</string>
+    <string name="login_forget_password_hyperlink" translatable="true"><a href="http://look2meet.com/#forgotPassword" translatable="true">Forgot Password</a></string>
+    <string name="hyper_link_add_profile" translatable="true"><a href="http://look2meet.com/user/profile#add" translatable="true">Add Profile</a></string>
+    <string name="title_activity_organisation" translatable="false">OrganisationActivity</string>
+    <string name="title_activity_check_in" translatable="false">CheckInActivity</string>
+    <string name="title_activity_search_params" translatable="false">SearchParamsActivity</string>
+    <string name="title_activity_search_param_select" translatable="false">SearchParamSelectActivity</string>
+    <string name="title_activity_favorites_" translatable="false">Favorites_Activity</string>
+    <string name="title_activity_organization_cell" translatable="false">OrganizationCell</string>
+    <string name="title_activity_organization_list_adapter" translatable="false">OrganizationListAdapter</string>
+    <string name="title_activity_mail_to_admin" translatable="false">MailToAdminActivity</string>
+    <string name="adminEmail" translatable="false">admin@look2meet.com</string>
+    <string name="title_activity_users_list" translatable="false">UsersList</string>
+    <string name="title_activity_users_list_cell" translatable="false">UsersListCell</string>
+    <string name="title_activity_friends" translatable="false">FriendsActivity</string>
+    <string name="title_activity_profile" translatable="false">ProfileActivity</string>
+    <string name="title_activity_filter" translatable="false">FilterActivity</string>
+    <string name="title_activity_org_list" translatable="false">OrgListActivity</string>
+    <string name="title_activity_picker" translatable="false">PickerActivity</string>
+    <string name="title_activity_video" translatable="false">VideoActivity</string>
+    <string name="title_activity_photo" translatable="false">PhotoActivity</string>
+    <string name="title_activity_checkins_filter" translatable="false">CheckinsFilterActivity</string>
+    <string name="title_activity_camera" translatable="false">CameraActivity</string>
+    <string name="title_activity_settings" translatable="false">SettingsActivity</string>
+    <string name="title_activity_gifts" translatable="false">GiftsActivity</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_map">map</string>
+
+
+    <string name="login_remember">Remember me</string>
+    <string name="login_remember_summary">Remember me</string>
+    <string name="login_forget_password">Forgot password?</string>
+
+
+    <!--registration activity-->
+    <string name="title_activity_registration">Registration</string>
+    <string name="registration_name">Name</string>
+    <string name="registration_password">Password</string>
+    <string name="registration_confirm_password">Confirm password</string>
+    <string name="registration_confirm_license">I agree</string>
+    <string name="registration_sex">Sex</string>
+    <string name="registration_sex_male">Male</string>
+    <string name="registration_sex_female">Female</string>
+
+    <string name="edit_black_list">Edit black list</string>
+    <string name="invisible">Invisible for everyone except</string>
+    <string name="mask">Mask for everyone except</string>
+
+    <string name="chat">Chat</string>
+    <string name="checkIn">Check in</string>
+    <string name="me">Me</string>
+
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="friends">Friends</string>
+    <string name="announce">Announce</string>
+
+    <string name="menu">Menu</string>
+
+    <string name="copyright">2014 © ALL PROVIDE RESERVED</string>
+
+    <string name="thx">Thanks</string>
+    <string name="skip">Skip</string>
+    <string name="who_are_you_looking_for">Who are you looking for?</string>
+    <string name="everyone">All</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="age">Age</string>
+
+    <string-array name="Sex">
+        <item>@string/everyone</item>
+        <item>@string/men</item>
+        <item>@string/women</item>
+    </string-array>
+
+    <string name="checkin_list">Checkins list</string>
+
+    <string name="search_param_country">Country</string>
+    <string name="search_param_city">City</string>
+    <string name="search_param_address">Address</string>
+    <string name="search_param_name">Name</string>
+    <string name="search_param_type">Type</string>
+    <string name="search_param_favorite">Favorite</string>
+    <string name="search_param_near_me">Near me</string>
+    <string name="search_param_no">No</string>
+    <string name="search_param_yes">Yes</string>
+    <string name="search_param_type_all">All</string>
+    <string name="search_param_type_cafe">Cafe</string>
+    <string name="search_param_type_park">Park</string>
+    <string name="search_param_type_cinema">Cinema</string>
+    <string name="search_param_country_russia">Russia</string>
+    <string name="error_try_again">Please try again</string>
+    <string name="error">Error</string>
+
+    <string name="search_menu_top">TOP</string>
+    <string name="search_menu_search">Search</string>
+    <string name="search_menu_create_temp_object">Create temporary object</string>
+
+    <!--activity_map-->
+    <string name="map_find_you">try to find your location</string>
+    <string name="map_gps_off_header">Location Services Not Active</string>
+    <string name="map_gps_off_warning">Your GPS seems to be disabled, do you want to enable it?</string>
+
+    <!--global-->
+    <string name="global_negative">No</string>
+    <string name="global_positive">Yes</string>
+    <string name="global_remind_later">Remind me later</string>
+
+    <!--api messages-->
+    <string name="api_network_disabled">Network disabled</string>
+    <string name="api_wifi_data">WiFi</string>
+    <string name="api_mobile_data">Mobile network</string>
+
+    <!-- organizations list cell -->
+    <string name="orglist_cell_work_time">Work time: </string>
+    <string name="orglist_cell_address">Address: </string>
+    <string name="orglist_cell_announce">Announce: </string>
+    <string name="rating">Rating</string>
+    <string name="announces">Announces</string>
+
+    <!-- checkin types -->
+    <string name="checkin_type_now">Now</string>
+    <string name="checkin_type_soon">Soon</string>
+    <string name="checkin_type_plan">Plan</string>
+    <string name="checkin_type_all">All</string>
+
+    <!-- bottom bar buttons -->
+    <string name="bottom_bar_me">PROFILES</string>
+    <string name="bottom_bar_menu">MENU</string>
+    <string name="bottom_bar_checkin">CHECKIN</string>
+    <string name="bottom_bar_chat">CHAT</string>
+
+    <string name="write_message">WRITE MESSAGE</string>
+    <string name="present">PRESENT</string>
+    <string name="delete_from_friends">DELETE FROM FRIENDS</string>
+    <string name="add_to_friends">ADD TO FRIENDS</string>
+    <string name="add_to_blacklist">TO BLACKLIST</string>
+    <string name="remove_from_blacklist">REMOVE FROM BLACKLIST</string>
+    <string name="sex">Sex: </string>
+    <string name="edit">Edit</string>
+
+    <!-- Checkins filter -->
+    <string name="announes_filter_activity_title">Select filters</string>
+    <string name="announes_filter_title">Title</string>
+    <string name="announes_filter_date_from">From</string>
+    <string name="announes_filter_date_to">To</string>
+    <string name="announes_filter_checkin_type">Checkin type</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="create_new_profile">CREATE NEW</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="choose_email_client">Choose an email client</string>
+
+    <string name="message_template1">Hello.\nI`m </string>
+	<string name="message_template2">Describe your problem here</string>
+	<string name="message_template3">Sent from Android version </string>
+    <string name="email_theme">Look2meet</string>
+    <string name="user_list_black">Black List</string>
+    <string name="user_list_white">White List</string>
+    <string name="user_list_mask">Mask List</string>
+    <string name="user_list_friends">Friends List</string>
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="change_text">Change Text</string>
+
+
+    <!--messages-->
+    <string name="message_error">Error</string>
+    <string name="message_network_error">Network error</string>
+    <string name="message_check_network">Check network connection</string>
+    <string name="message_no_connect_to_server" translatable="true">Could not connect to server</string>
+    <string name="message_data_recieving_error">Data receiving error</string>
+    <string name="message_passwords_not_equals">passwords not equals</string>
+    <string name="message_wrong_data">Wrong data</string>
+    <string name="message_wrong_email">email is not valid</string>
+    <string name="message_empty_password">password is empty</string>
+    <string name="message_password_short">password too short</string>
+    <string name="message_name_empty">name is empty</string>
+
+    <string name="already_checked_in">You already checked in with status </string>
+    <string name="go_away">Do you want to go away?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gender">Gender</string>
+    <string name="range_from">from</string>
+    <string name="range_to">to</string>
+
+    <!--photo gallery-->
+    <string name="close_fullscreen_image">close</string>
+    <string name="free">Free</string>
+    <string name="premium">Premium</string>
+    <string name="gifts">Gifts</string>
+    <string name="message_text">Message text</string>
+
+    <string name="please_wait" translatable="true" >Please wait...</string>
+
+    <string name="wait_for_load" translatable="true">Please wait until files be uploaded</string>
+
+    <!-- Gender types -->
+    <string name="gender_type_male">Male</string>
+    <string name="gender_type_female">Female</string>
+    <string name="gender_type_all">All</string>
+
+    <string name="filter_results_warning">Search results has been filtered</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+
+    <string name="to" translatable="true">To: </string>
+    <string name="subject" translatable="true">Subject: </string>
+    <string name="message" translatable="true">Message: </string>
+    <string name="send" translatable="true">send</string>
+    <!--toAdmin-->
+    <string name="build">Build: </string>
+
+
+    <string name="add_from_camera" translatable="true">Add from camera</string>
+    <string name="add_from_gallery" translatable="true">Add from gallery</string>
+
+    <string name="msg_size_max_reached" translatable="true">You have exceeded the maximum message size</string>
+    <string name="double_tap_to_exit" translatable="true">Please click BACK again to exit</string>
+
+    <!--chat activity-->
+    <string name="chat_menu_smile" translatable="true">Smile</string>
+    <string name="chat_menu_image_from_camera" translatable="true">Image from camera</string>
+    <string name="chat_menu_image_from_gallery" translatable="true">Image from gallery</string>
+    <string name="chat_menu_video_from_camera" translatable="true">Video from camera</string>
+    <string name="chat_menu_video_from_gallery" translatable="true">Video from gallery</string>
+
+    <string name="address" translatable="true">Address</string>
+    <string name="org_name" translatable="true" >Name</string>
+    <string name="proceed" translatable="true" >Proceed</string>
+    <string name="update">update</string>
+    <string name="favorites_empty">Favorite is empty</string>
+    <string name="checkin_remain">Estimated time before status activity has stopped</string>
+    <string name="dialogs">dialogs</string>
+
+    <string name="warning">Warning</string>
+    <string name="alert_avatar">Are you definitely want to change avatar?</string>
+</resources>

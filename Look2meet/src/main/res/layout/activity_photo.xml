@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zuzex.look2meet.media.PhotoActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/top_bar"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false">
+        <include
+            android:id="@+id/top_layout"
+            layout="@layout/media_menu_top"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/photo_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:layout_below="@+id/top_bar"
+        >
+        </GridView>
+
+</RelativeLayout>

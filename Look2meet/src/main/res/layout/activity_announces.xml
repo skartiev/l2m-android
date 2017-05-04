@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="0dp"
+              android:paddingRight="0dp"
+              android:paddingTop="0dp"
+              android:paddingBottom="0dp"
+              android:orientation="vertical"
+              tools:context="com.zuzex.look2meet.OrgList.OrgListActivity"
+              android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/top_menu"
+                  android:background="@drawable/top_bar"
+                  android:layout_height="60dp"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/back_button"
+            android:src="@drawable/bar_button_back2x"
+            android:onClick="BackClicked"
+            />
+
+        <TextView
+            style="@style/look2meet.top_bar_caption"
+            android:id="@+id/activity_top_caption"
+            android:layout_weight="1"
+            android:text="@string/announces"
+            />
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/organization_list_sort_button"
+            android:src="@drawable/bb_search_active"
+            android:onClick="SearchAnnounceClicked"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/organization_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/main_menu"
+        />
+
+</LinearLayout>

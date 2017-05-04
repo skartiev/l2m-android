@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    tools:context="com.zuzex.look2meet.UsersList"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_menu_parent"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar">
+
+        <ImageButton
+            android:id="@+id/search_id"
+            style="@style/look2meet.top_bar_button"
+            android:src="@drawable/bb_search_active"
+            android:onClick="searchClicked" />
+
+        <ImageButton
+            android:id="@+id/deleteMedia"
+            style="@style/look2meet.top_bar_button"
+            android:src="@drawable/bb_fav_active"
+            android:onClick="FavoritesClicked" />
+
+        <ImageButton
+            android:id="@+id/friends_id"
+            style="@style/look2meet.top_bar_button"
+            android:src="@drawable/bb_friends_active"
+            android:onClick="friendsClicked"/>
+
+        <ImageButton
+            android:id="@+id/annonce_id"
+            style="@style/look2meet.top_bar_button"
+            android:src="@drawable/bb_announce_active"
+            android:onClick="announcesClicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_menu"
+        android:background="@drawable/top_bar"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/buttonBack"
+            android:src="@drawable/bar_button_back2x"
+            android:onClick="backButtonClick"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewTop"
+                style="@style/look2meet.top_bar_caption"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/buttonFilterUsers"
+            android:src="@drawable/bar_button_filter2x"
+            android:onClick="onFilterUserClick"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layoutFrom"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userlist_text_layout"
+            android:orientation="vertical"
+            android:visibility="gone">
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="asd"
+            android:id="@+id/textViewHeaderType"
+            android:layout_alignParentTop="false"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="asd"
+            android:id="@+id/textViewHeaderName"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="asd"
+            android:id="@+id/textViewHeaderAddress"
+            android:layout_marginTop="3dp"
+            android:textColor="#ffb0b0b0"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            />
+        </LinearLayout>
+
+        <!--android:iconifiedByDefault="false"-->
+        <SearchView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchViewTop"
+            android:background="#ffe4e4e4"
+            android:onClick="activeSearch"
+            />
+
+        <TextView
+            android:id="@+id/filter_results_warning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_results_warning"
+            android:background="#ffe4e4e4"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewUsersList"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/searchViewTop" />
+
+    </LinearLayout>
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/main_menu"
+    />
+</LinearLayout>

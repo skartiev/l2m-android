@@ -1,0 +1,343 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/back_button"
+            android:src="@drawable/bar_button_back2x"
+            android:onClick="BackClicked"/>
+
+        <TextView
+            android:id="@+id/activity_top_caption"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            android:text="@string/dialogs"
+            />
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/organization_list_sort_button"
+            android:src="@drawable/bar_button_info2x"
+            android:onClick="infoClicked"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ImageLayout"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageViewProfileOther"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/no_image"
+                />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:id="@+id/vipIcon"
+                android:src="@drawable/vip"
+                android:background="@drawable/rounded_rect_for_vip"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                android:layout_below="@+id/textViewAge"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:id="@+id/favoriteImage"
+                android:src="@drawable/people"
+                android:background="@drawable/rounded_rect_for_friends"
+                android:scaleType="centerInside"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textViewAge"
+                android:background="@drawable/rounded_rect_for_number"
+                android:textColor="#ffffffff"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignParentBottom="false" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myProfileImageViewCurrent"
+                android:src="@drawable/mark_online_red"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewNameProfile" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="profile_like_btn_press"
+                android:gravity="center_vertical|right"
+                android:weightSum="10"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textViewSex"
+                    android:gravity="left"
+                    android:layout_weight="10"
+                    android:layout_marginTop="0dp" />
+
+                <Button
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/buttonLike"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/likesCount"
+                    android:textColor="#ffff292e"
+                    android:layout_weight="1"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onSendMessagePress">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageViewCheckin"
+                android:src="@drawable/write_message2x"
+                android:layout_gravity="top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/write_message"
+                android:id="@+id/textViewFree"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageViewCheckin"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="55dp"
+            android:id="@+id/layoutRel"
+            android:onClick="onSendGiftPress">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/userlist_unread_message_image"
+                android:src="@drawable/present2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/present"
+                android:id="@+id/textView3"
+                android:layout_toRightOf="@+id/userlist_unread_message_image"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginTop="3dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:id="@+id/layoutTopProfile"
+            android:layout_marginTop="10dp"
+            android:onClick="deleteUserFriend"
+            android:orientation="horizontal"
+            android:layout_marginLeft="140dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/plus2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/delete_from_friends"
+                android:id="@+id/textViewDelete"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="55dp"
+            android:onClick="onAddBlackListFriend"
+            android:id="@+id/lay"
+            android:layout_alignParentBottom="false"
+            android:orientation="horizontal"
+            android:layout_marginLeft="140dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView4"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="false"
+                android:src="@drawable/minus2x"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/add_to_blacklist"
+                android:id="@+id/textViewAddBlackList"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ff000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></GridLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/profile_organisation_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridViewNameProfile"
+        android:numColumns="2"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+            <include
+            android:id="@+id/bottom_layout"
+            layout="@layout/main_menu"/>
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dip"
+    android:descendantFocusability="beforeDescendants">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:src="@drawable/no_image"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/item_text_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="20dip"
+        android:textColor="#3c7e8d"
+        android:layout_marginLeft="15dip"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/profile_unread_message_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/write_message2x"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        />
+    <TextView
+        android:id="@+id/profile_unread_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="15dp"
+        />
+</LinearLayout>

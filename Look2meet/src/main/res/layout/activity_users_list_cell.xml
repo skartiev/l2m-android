@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="5dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/cellLayoutUsers"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textViewUsersList"
+        android:layout_alignParentLeft="false"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="125dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:ellipsize="end"
+        android:layout_alignParentStart="false"
+        android:gravity="left" />
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="125dp"
+        android:text=""
+        android:maxLines="2"
+        android:maxLength="60"
+        android:ellipsize="end"
+        android:id="@+id/textViewTitleForDialogs" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textViewCityName"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="125dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:ellipsize="end"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewLabelStatus"
+        android:layout_alignTop="@+id/imageViewCheckin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewCheckin"
+        android:src="@drawable/checkin_mark2x"
+        android:layout_toStartOf="@+id/textViewLabelStatus"
+        android:layout_marginRight="9dp"
+        android:layout_alignTop="@+id/textViewCityName"
+        android:layout_toLeftOf="@+id/textViewLabelStatus" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlist_unread_message_image"
+        android:src="@drawable/write_message2x"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/imageViewCheckin"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageViewCheckin"
+        android:layout_alignStart="@+id/imageViewCheckin" />
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewUsersList"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="18dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/textViewMarker"
+            android:background="@drawable/rounded_rect_for_number"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="18dp"
+            android:id="@+id/vipIcon"
+            android:src="@drawable/vip"
+            android:background="@drawable/rounded_rect_for_vip"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/textViewMarker"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="18dp"
+            android:id="@+id/imageViewIsFriend"
+            android:src="@drawable/people"
+            android:background="@drawable/rounded_rect_for_friends"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewCurrent"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="95dp"
+            android:src="@drawable/mark_online_red" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlist_unread_messages_text"
+        android:layout_toEndOf="@+id/userlist_unread_message_image"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/userlist_unread_message_image"
+        android:layout_marginLeft="14dp" />
+
+</RelativeLayout>

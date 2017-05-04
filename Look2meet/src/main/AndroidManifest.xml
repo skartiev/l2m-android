@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zuzex.look2meet">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!--
+         The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="com.zuzex.look2meet.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="com.zuzex.look2meet.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.zuzex.look2meet.Look2meet"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAK28ySN9XQG772JzeInbViJe9mtQlb2yI" />
+        <meta-data
+            android:name="android.support.UI_OPTIONS"
+            android:value="splitActionBarWhenNarrow" />
+
+        <activity
+            android:name="com.zuzex.look2meet.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/BackgroundWhiteTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.MapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.ProfilesActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.chat.ChatActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.zuzex.look2meet.LookingForActivity"
+            android:label="@string/title_activity_looking_for"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.OrganisationActivity"
+            android:label="@string/title_activity_organisation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.search.SearchParamsActivity"
+            android:label="@string/title_activity_search_params"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.search.SearchParamSelectActivity"
+            android:label="@string/title_activity_search_param_select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.UsersList"
+            android:label="@string/title_activity_users_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.FilterActivity"
+            android:label="@string/title_activity_filter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.OrgList.OrgListActivity"
+            android:label="@string/title_activity_org_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.media.MediaActivity"
+            android:label="@string/title_activity_video"
+            android:parentActivityName="com.zuzex.look2meet.MyProfileActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zuzex.look2meet.MyProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.media.FullScreenViewActivity"
+            android:parentActivityName="com.zuzex.look2meet.media.MediaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.announces.AnnouncesFilterActivity"
+            android:label="@string/title_activity_checkins_filter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zuzex.look2meet.api.PopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+
+        <receiver
+            android:name="com.zuzex.look2meet.PushNotifications.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.zuzex.look2meet" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.zuzex.look2meet.PushNotifications.GcmIntentService" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.zuzex.look2meet.GiftsActivity"
+            android:label="@string/title_activity_gifts" >
+        </activity>
+
+        <service android:name="com.zuzex.look2meet.PushNotifications.PushRegistrationIntentService" >
+        </service>
+
+
+        <!-- Yandex Metrica required manifest entries START -->
+        <service
+            android:name="com.yandex.metrica.MetricaService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":Metrica"
+            tools:ignore="ExportedService">
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.yandex.metrica.IMetricaService"/>
+                <data android:scheme="metrica"/>
+            </intent-filter>
+
+            <meta-data android:name="metrica:api:level" android:value="16"/>
+        </service>
+
+        <receiver
+            android:name="com.yandex.metrica.MetricaEventHandler"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+
+            <intent-filter>
+                <action android:name="com.yandex.metrica.intent.action.SYNC"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.zuzex.look2meet.MetricaContentProvider"
+            android:authorities="com.zuzex.look2meet.MetricaContentProvider"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider"/>
+        <!-- Yandex Metrica required manifest entries END -->
+
+
+    </application>
+
+</manifest>

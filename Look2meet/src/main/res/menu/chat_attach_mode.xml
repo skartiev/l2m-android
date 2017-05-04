@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+	<item android:id="@+id/chat_attach_smile"
+	      android:title="@string/chat_menu_smile" />
+	<item android:id="@+id/chat_attach_image_from_camera"
+	      android:title="@string/chat_menu_image_from_camera" />
+    <item android:id="@+id/chat_attach_image_from_gallery"
+          android:title="@string/chat_menu_image_from_gallery" />
+	<item android:id="@+id/chat_attach_video_from_camera"
+	      android:title="@string/chat_menu_video_from_camera" />
+    <item android:id="@+id/chat_attach_video_from_gallery"
+        android:title="@string/chat_menu_video_from_gallery" />
+</menu>

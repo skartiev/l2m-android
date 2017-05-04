@@ -1,0 +1,538 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.zuzex.look2meet.OrganisationActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/top_menu"
+                  android:background="@drawable/top_bar"
+                  android:layout_height="60dp"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/back_button"
+            android:src="@drawable/bar_button_back2x"
+            android:onClick="BackClicked"
+            />
+
+        <TextView
+            style="@style/look2meet.top_bar_caption"
+            android:id="@+id/activity_top_caption"
+            android:layout_weight="0.8"
+            />
+
+        <ImageButton
+            style="@style/look2meet.top_bar_button"
+            android:id="@+id/organization_list_sort_button"
+            android:src="@drawable/bar_button_checkin2x"
+            android:onClick="CheckinClicked"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageViewOrg"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textViewNow"
+                android:background="@drawable/rounded_rect_for_number"
+                android:textColor="#ffffffff"
+                android:textSize="11sp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignParentBottom="false" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="\u2605"
+                android:id="@+id/favoriteImage"
+                android:background="@drawable/rounded_rect_for_star"
+                android:textColor="#ffffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11sp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignBottom="@+id/imageViewOrg"
+                android:layout_marginBottom="15dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textViewHeaderType"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/organization_top_icon"
+                    android:src="@drawable/mark_top_x2"
+                    android:layout_gravity="right"
+                    android:visibility="invisible"
+                    />
+
+                </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewTimeWork"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewAddress"
+                android:layout_gravity="left|bottom"
+                android:textSize="12sp"
+                android:textColor="#ff898989" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:clickable="true"
+                    android:onClick="ShowOnMap">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/on_map"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="На карте"
+                        android:textColor="#ff898989"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:onClick="ShowTop">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/top_arrow2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="в ТОПе"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ff898989" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ff9a9a9a"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="topBtnClicked"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fav2x"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/textViewFavorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="В ИЗБРАННОЕ"
+                android:textSize="12sp"
+                android:textColor="#ff244cff"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="like_btn_press"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/buttonLike"
+                android:background="@drawable/like2x"
+                android:onClick="like_btn_press"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/textViewLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:layout_marginLeft="4dp"
+                android:textColor="#ffff0b10"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ff9a9a9a"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDescription"
+                android:layout_margin="15dp"/>
+
+            <View
+                android:id="@+id/descriptionDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ff9a9a9a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:layout_margin="15dp">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5">
+
+                    <LinearLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp">
+
+                        <Button
+                            style="@style/look2meet.org_checkin_all_button"
+                            android:text="Я ЗДЕСЬ"
+                            android:onClick="onHereClicked"
+                            android:background="#36a9c4"/>
+
+                        <LinearLayout
+                            style="@style/look2meet.org_checkins_block_bottom_layout">
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginRight="1dp"
+                                android:onClick="onHereClickedWomen"
+                                >
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_women_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_women_textview"
+                                    android:id="@+id/textViewHereGirl"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginLeft="1dp"
+                                android:onClick="onHereClickedMen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_men_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_men_textview"
+                                    android:id="@+id/textViewHereBoy"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="15dp">
+
+                        <Button
+                            style="@style/look2meet.org_checkin_all_button"
+                            android:text="СКОРО БУДУ"
+                            android:background="#5bbbd2"
+                            android:onClick="onSoonClicked"/>
+
+                        <LinearLayout
+                            style="@style/look2meet.org_checkins_block_bottom_layout">
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginRight="1dp"
+                                android:onClick="onSoonClickedWomen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_women_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_women_textview"
+                                    android:id="@+id/textViewSoonGirl"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginLeft="1dp"
+                                android:onClick="onSoonClickedMen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_men_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_men_textview"
+                                    android:id="@+id/textViewSoonBoy"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5">
+
+                    <LinearLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="8dp">
+
+                        <Button
+                            style="@style/look2meet.org_checkin_all_button"
+                            android:text="ПЛАНИРУЮ"
+                            android:background="#83ccdd"
+                            android:onClick="onPlanClicked"/>
+
+                        <LinearLayout
+                            style="@style/look2meet.org_checkins_block_bottom_layout">
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginRight="1dp"
+                                android:onClick="onPlanClickedWomen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_women_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_women_textview"
+                                    android:id="@+id/textViewPlanGirl"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginLeft="1dp"
+                                android:onClick="onPlanClickedMen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_men_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_men_textview"
+                                    android:id="@+id/textViewPlanBoy"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+
+                        <Button
+                            style="@style/look2meet.org_checkin_all_button"
+                            android:text="ВСЕГО"
+                            android:background="#8fa5b4"
+                            android:onClick="onVisitorsClicked"/>
+
+                        <LinearLayout
+                            style="@style/look2meet.org_checkins_block_bottom_layout">
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginRight="1dp"
+                                android:onClick="onVisitorsClickedWomen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_women_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_women_textview"
+                                    android:id="@+id/textViewVisitorGirl"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/look2meet.org_checkins_block_bottom_button"
+                                android:layout_marginLeft="1dp"
+                                android:onClick="onVisitorsClickedMen">
+
+                                <ImageView
+                                    style="@style/look2meet.org_checkins_block_men_icon"/>
+                                <TextView
+                                    style="@style/look2meet.org_checkins_block_men_textview"
+                                    android:id="@+id/textViewVisitorBoy"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <com.zuzex.look2meet.ExpandedListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridViewAdditional"
+                android:numColumns="2"
+                android:textFilterEnabled="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:isScrollContainer="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/main_menu"/>
+
+</LinearLayout>

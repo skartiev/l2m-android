@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:background="@drawable/background_xml"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zuzex.look2meet.MainActivity"
+    android:gravity="bottom">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/white"
+        >
+        <Button
+            android:text="@string/login_button"
+            android:id="@+id/login_button"
+            style="@style/look2meet.buttons"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:text="@string/register_button"
+            android:id="@+id/register_button"
+            style="@style/look2meet.buttons"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white">
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="40px"
+            android:id="@+id/footer_logo"
+            android:background="@drawable/footer_logo"
+            android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/userCountText"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="75px"
+            android:text="@string/copyright"
+            android:textColor="#ffffff"
+            android:id="@+id/textViewStatic"
+            android:background="@drawable/start_footer"
+            android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+</LinearLayout>

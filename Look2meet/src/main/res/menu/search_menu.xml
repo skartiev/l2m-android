@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item android:id="@+id/search_menu_item_top"
+        android:title="@string/search_menu_top" />
+    <item android:id="@+id/search_menu_item_search"
+        android:title="@string/search_menu_search" />
+    <item android:id="@+id/search_menu_item_create_temp_object"
+        android:title="@string/search_menu_create_temp_object" />
+</menu>
